@@ -8,6 +8,6 @@ fi
 
 touch "$file"
 
-ls | grep "./*.sh" | while read line; do
+ls | grep "./*.txt" | while read line; do
     md5sum "$line" | tr -s ' ' >> $file
 done
